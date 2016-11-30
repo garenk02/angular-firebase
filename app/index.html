@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="webApp" class="no-js"> <!--<![endif]-->
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyDoT8SUVcWc8Mx-m8GsjMDSMt0s__05Y-g",
+      authDomain: "angularseed-adbf1.firebaseapp.com",
+      databaseURL: "https://angularseed-adbf1.firebaseio.com",
+      storageBucket: "angularseed-adbf1.appspot.com",
+      messagingSenderId: "1065473925006"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+  <div ng-view></div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="register/register.js"></script>
+  <script src="welcome/welcome.js"></script>
+  <script src="addPost/addPost.js"></script>
+</body>
+</html>
